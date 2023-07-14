@@ -1,0 +1,28 @@
+.creations {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 180px 180px 180px;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: lighter;
+    }
+
+    &__button {
+        background-color: white;
+        width: 150px;
+        height: 40px;
+        letter-spacing: 0.2rem;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+
+    }
+}
