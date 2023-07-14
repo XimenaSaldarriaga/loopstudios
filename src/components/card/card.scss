@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 180px 0px 180px;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        cursor: pointer;
+    }
+
+    &__div:hover {
+        color: black;
+    }
+
+    &__image{
+        position: relative;
+    }
+
+    &__image:hover {
+        opacity: 50%;
+    }
+
+    &__text {
+        position: absolute;
+        padding: 20px;
+        font-size: 30px;
+        width: 14.4rem;
+        word-spacing: 5px;
+        margin-top: 350px;
+    }
+
+}

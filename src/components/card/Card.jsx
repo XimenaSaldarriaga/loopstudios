@@ -7,6 +7,7 @@ import above from "../../images/desktop/image-from-above.jpg"
 import pocket from "../../images/desktop/image-pocket-borealis.jpg"
 import curiosity from "../../images/desktop/image-curiosity.jpg"
 import fisheye from "../../images/desktop/image-fisheye.jpg"
+import './card.scss'
 
 const listCards = [
   {
@@ -45,11 +46,11 @@ const listCards = [
 
 const Card = () => {
   return (
-    <div>
+    <div className='card'>
               {listCards.map((data, index) => (
-      <div key = { index }>
-          < img src = { data.image } alt = "" />
-          <span>{data.title}</span>
+      <div className='card__div' key = { index }>
+          < img className='card__image' src = { data.image } alt = "" />
+          <span className='card__text'>{data.title}</span>
       </div>
       ))}
     </div>
