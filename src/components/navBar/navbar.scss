@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+        object-fit: contain;
+    }
+
+    &__links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        font-family: 'Alata', sans-serif;
+        color: white;
+        hr{
+            display: none;
+        }
+    }
+
+
+
+    &__link:hover {
+        cursor: pointer;
+
+        hr {
+            display: block;
+            width: 50%;
+            height: 1.5px;
+            background-color: white;
+        }
+
+    }
+}
