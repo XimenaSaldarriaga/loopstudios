@@ -25,9 +25,9 @@ const links = [
     },
 ];
 
-const NavBar = () => {
+const NavBar = ({  className })  => {
     return (
-        <nav className='navbar'>
+        <nav className={`navbar ${className}`}>
             <img className='navbar__logo' src={logo} alt="" />
             <ul className="navbar__links">
                 {links.map((link, index) => (
