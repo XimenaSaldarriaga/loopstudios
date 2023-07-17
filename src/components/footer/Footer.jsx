@@ -38,9 +38,9 @@ const Footer = () => {
 
     <footer className='footer'>
       <div className='footer__nav'>
+// Aquí se agrega la clase para actualizar los estilos del navbar
         <NavBar links={footerLinks} className="footer__navbar" />
       </div>
-
       <div className="footer__content">
         <div className="footer__social">
           {iconList.map((icon, index) => (
