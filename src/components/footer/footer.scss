@@ -52,10 +52,12 @@
     .footer {
       display: flex;
       flex-direction: column;
+      &__navbar {
+
+      }
 
       &__content {
         display: flex;
-        align-items: center;
       }
 
       &__image {
@@ -66,7 +68,9 @@
         display: flex;
         padding-bottom: 30px;
         font-size: 12px;
+        text-align: center;
     }
+
     }
 
   }

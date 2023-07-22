@@ -38,18 +38,20 @@
 
 @media only screen and (max-width: 450px) {
     .navbar {
+        width: 100%;
         display: flex;
 
         &__logo {
+            display: flex;
             width: 120px;
             left: 5px;
             padding: 10px;
+            align-self: center;
         }
 
-        &__links {
+        &__link {
             display: flex;
-            flex-direction: column;
-            font-size: 10px;
+            font-size: 12px;
         }
     }
 }
