@@ -49,7 +49,7 @@ const Card = () => {
     <div className='card'>
               {listCards.map((data, index) => (
       <div className='card__div' key = { index }>
-          < img className='card__image' src = { data.image } alt = "" />
+          <img className='card__image' src = { data.image } alt = "" />
           <span className='card__text'>{data.title}</span>
       </div>
       ))}

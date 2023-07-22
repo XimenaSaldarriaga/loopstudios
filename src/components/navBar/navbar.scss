@@ -1,34 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
     display: flex;
-    justify-content: space-between;
+    object-fit: contain;
+  }
 
-    &__logo {
-        display: flex;
-        object-fit: contain;
+  &__links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: 'Alata', sans-serif;
+    color: white;
+    hr {
+      display: none;
     }
+  }
 
-    &__links {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-        font-family: 'Alata', sans-serif;
-        color: white;
-        hr{
-            display: none;
-        }
+  &__link:hover {
+    cursor: pointer;
+
+    hr {
+      display: block;
+      width: 50%;
+      height: 1.5px;
+      background-color: white;
     }
+  }
+  .nav_toggle {
+    display: none;
+  }
+}
 
-    &__link:hover {
-        cursor: pointer;
+@media only screen and (max-width: 450px) {
+    .navbar {
+        display: flex;
 
-        hr {
-            display: block;
-            width: 50%;
-           height: 1.5px;
-            background-color: white;
+        &__logo {
+            width: 120px;
+            left: 5px;
+            padding: 10px;
         }
 
+        &__links {
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
     }
 }

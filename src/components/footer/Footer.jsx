@@ -49,7 +49,9 @@ const Footer = () => {
             </figure>
           ))}
         </div>
+        <div>
         <span className="footer__text">© 2021 Loopstudios. All rights reserved.</span>
+        </div>
       </div>
     </footer>
 
