@@ -26,21 +26,33 @@ const Footer = () => {
 
     },
   ];
+  const footerLinks = [
+    { name: 'About' },
+    { name: 'Careers' },
+    { name: 'Events' },
+    { name: 'Products' },
+    { name: 'Support' },
+  ];
+
   return (
 
     <footer className='footer'>
-      <div className='footer__social'>
-        {iconList.map((icon, index) => (
-          <figure className='footer__icon' key={index}>
-            <img className='footer__image' src={icon.icon} alt={icon.name} />
-          </figure>
-        ))}
-      </div>
-      <span className='footer__text'> © 2021 Loopstudios. All rights reserved.</span>
       <div className='footer__nav'>
- 
+// Aquí se agrega la clase para actualizar los estilos del navbar
+        <NavBar links={footerLinks} className="footer__navbar" />
       </div>
-
+      <div className="footer__content">
+        <div className="footer__social">
+          {iconList.map((icon, index) => (
+            <figure className="footer__icon" key={index}>
+              <img className="footer__image" src={icon.icon} alt={icon.name} />
+            </figure>
+          ))}
+        </div>
+        <div className="footer__text">
+        <span >© 2021 Loopstudios. All rights reserved.</span>
+        </div>
+      </div>
     </footer>
 
   )
