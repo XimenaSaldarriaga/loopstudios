@@ -10,6 +10,7 @@ const Creations = () => {
       <button className='creations__button'>SEE ALL</button>
     </div>
     <Card />
+    <button className='creations__button_end'>SEE ALL</button>
     </div>
   )
 }
